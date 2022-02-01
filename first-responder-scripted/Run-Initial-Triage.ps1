@@ -1,4 +1,4 @@
-﻿#IRONCAT - 2-1-2022
+﻿#IRONCAT - 2-1-2022 PSORCERI (Pluralsight)
 #Pluralsight Course: https://app.pluralsight.com/library/courses/incident-response-detection-analysis/table-of-contents
 
 # WinPmem Download Location:
@@ -160,12 +160,12 @@ copy-item -Recurse -path C:\Windows\System32\Winevt\Logs\ -Destination $datapath
 
 copy-item -recurse -path C:\Windows\System32\LogFiles\ -Destination $datapath/winevent_logs
 
-#add if IIS is needed
+<#add if IIS is needed and on the device. Need to change the inetpub to the correct path.
 new-item -type directory $datapath/inetpub
 copy-item -recurse -path c:\inetpub\  -Destination $datapath/inetpub
+#>
 #uniq remove later
-new-item -type directory $datapath/lcso-sitefinity
-copy-item -recurse E:\Website_files\LCSOweb\ -Destination $datapath/lcso-sitefinity
+
 stop-transcript
 #Module: Network Collection
 #Demo: Network Collection 

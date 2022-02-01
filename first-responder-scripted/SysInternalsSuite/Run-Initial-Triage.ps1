@@ -142,7 +142,6 @@ wmic service list config >> $datapath/wmicservices.txt
 schtasks >> $datapath/scheduledtasks.txt
 
 #disk information
-./SysInternalsSuite/volumeid64.exe
 ./SysInternalsSuite/diskmon.exe
 ./SysInternalsSuite/ntfsinfo.exe
 ./SysInternalsSuite/DiskView.exe
