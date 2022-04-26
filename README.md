@@ -19,4 +19,16 @@ The process for this goes like this:
 
 > If you run into execution issues, use ```set-executionpolicy 0``` execute, but remember to set the execution policy back to the restricted state. Set-Executionpolicy RemoteSigned
 
-Happy Hunting
+## Zeek Scripts
+
+This directory contains useful scripts for network analysis with Zeek.
+
+file-extract.zeek
+- Filters for port 445 and performs MD5 hashing and extraction for all files seen
+
+dnsentropy.zeek
+- Calculates an entropy score for all DNS queries made and alerts on high-values
+
+---
+
+Happy Hunting!
