@@ -55,7 +55,7 @@ redef record connection += {
 # This event is handled at a priority higher than zero so that if
 # users modify this stream in another script, they can do so at the
 # default priority of zero.
-event bro_init() &priority=5
+event zeek_init() &priority=5
 {
   # Create the stream. This adds a default filter automatically.
   Log::create_stream(DNS_Entropy::LOG, [$columns=Info, $path="dns_entropy"]);
